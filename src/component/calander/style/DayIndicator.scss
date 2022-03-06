@@ -1,0 +1,25 @@
+.day-indicator {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(auto, 1fr));
+    grid-template-rows: repeat(6, minmax(auto, 1fr));
+
+    .day-icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &.selected {
+            box-shadow: 0 0 3px rgba(0,0,0.3);
+            border-radius: 50%;
+        }
+
+        &.other-month-day {
+            color: rgba(0,0,0,0.3)
+        }
+    }
+}

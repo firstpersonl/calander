@@ -1,0 +1,12 @@
+.week-indicator {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(auto, 1fr));
+    padding: 15px;
+
+    .week-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+    }
+}
